@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
 	<head> 
-	    <meta charset="utf8" />  
+	    <meta charset="utf-8" />  
 	    <title>Fm UI/UX Designer</title>
 	
 	    <!--PARA VISUALIZACION EN DISPOSITIVOS MOVILES---------------->  
-	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
 
 	    <!--VINCULO AFUENTES GOOGLE FONTS---------------->
 		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
@@ -32,17 +33,15 @@
 	    <script type="text/javascript" src="js/plugin-isotope/isotope.js"></script> 
 	    <script type="text/javascript" src="js/jquery-easing/jquery.easing.1.3.min.js"></script>
 	    <script type="text/javascript" src="js/jquery-easing/jquery.easing.compatibility.js"></script> 
+	    <script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script> 
 
-
-	     <!-- slider trabajos -->
+	    <!-- slider trabajos -->
 	    <script type="text/javascript" src="plugin-slider/js/slick.js"></script>
-	    <link href="plugin-slider/CSS/slick-theme.css" rel="stylesheet">
-	    <link href="plugin-slider/CSS/slick.css" rel="stylesheet">
-
-
+	    <link href="plugin-slider/css/slick-theme.css" rel="stylesheet">
+	    <link href="plugin-slider/css/slick.css" rel="stylesheet">
 	</head>
 	
-	<body class="fadeIn">
+	<body id="top_page" class="fadeIn">
 		<div id="wrapper"></div>
  		<div id="border-t"></div>
  		<div id="border-b"></div>
@@ -66,8 +65,8 @@
 				<div class="overlay"></div>
 				<div class="header_top clearfix">
 					<h1 class="title_name">
-						<span class="strong">Federico Mosqueira,</span>
-						<span class="subtitle_name">ui/ux designer</span>
+						<a id="logo" class="btn_anchor" href="#top_page"><span class="strong">Federico Mosqueira</span>
+						<span class="subtitle_name">ui/ux designer</span></a>
 					</h1>
 					 <nav class="side_menu">
 						<ul>
@@ -80,28 +79,23 @@
 					<div class="portrait">
 						<img src="images/portrait.jpg">
 					</div>
-					<!-- <h1 class="title_name">I'm <span class="strong">Federico Mosqueira</span></h1>
-					<h2 class="subtitle_name">ui/ux designer</h2> -->
 					<div class="profile_info">
 						<div class="info_about">
-							<p><span class="strong">Product designer</span> from Toronto. 
-								Diseñador ui/ux,  <span class="strong">YSDN</span>. Previously on gap year to learn how to design better experiences for people.</p>
-							<a href="https://drive.google.com/file/d/0BxwqrHi3BeDlZmp1Z3laY3hjVmM/view?usp=sharing" target"_blank" class="text_sm">Descargar C.V</a>	
+							<p><span class="strong">Diseñador UI/UX</span> con enfoque en la implementación <span class="strong">HTML 5, CSS 3 (Sass, Bootstrap) y Js (Jquery)</span>. Busco formar parte de un equipo de desarrollo para seguir avanzando como profesional.</p>
+							<a href="https://drive.google.com/file/d/0BxwqrHi3BeDlQmdEUVVaa01zdEE/view?usp=sharing" target"_blank" class="text_sm">Descargar C.V</a>	
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div id="filter_works">
-						<div class="col-md-12 reset_side_space text-center clearfix">
-							<a href="#" class="btn-filter design block" data-filter=".filter_code">
-								<i class="material-icons block">&#xE320;</i>
-								<span class="block">Web</span>
-							</a>
-							<a href="#" class="btn-filter design block" data-filter=".filter_design">
-								<i class="material-icons">&#xE3D3;</i>
-								<span class="block">Gráfico</span>
-							</a>
-						</div>
+				<div id="filter_works">
+					<div class="col-md-12 reset_side_space text-center clearfix">
+						<a href="#" class="btn-filter design block" data-filter=".filter_code">
+							<i class="material-icons block">&#xE320;</i>
+							<span class="block">Web</span>
+						</a>
+						<a href="#" class="btn-filter design block" data-filter=".filter_design">
+							<i class="material-icons">&#xE3D3;</i>
+							<span class="block">Gráfico</span>
+						</a>
 					</div>
 				</div>
 			</header>
@@ -110,8 +104,8 @@
 		<div id="section_content" class="strong_grey">
 			<header id="header" class="container_header bg_img row_space pattern_bg position-title">
 				<div class="presentation clearfix">
-					<h1 class="text_light wow fadeInUp">A Designer who loves code</h1>
-					<h2 class="text_light text_half_light">Hola! mi nombre es Federico, conoce más acerca de mi trabajo</h2>
+					<h1 class="wow fadeInUp">Diseño de Interfaces </br> y experiencia de usuario</h1>
+					<h2 class="text_half_light">Conocé más acerca de mi trabajo</h2>
 				</div>
 				<a href="#section_works" class="btn btn-lg btn-default btn-down btn_anchor">
 					<i class="material-icons">&#xE5CF;</i>
@@ -121,9 +115,9 @@
 			<div id="section_works" class="wow fadeIn">
 				<div id="works">
 				<div class="filter_element filter_code container_space">
-					<div class="">
+					<div class="cont_info clearfix">
 						<h2 class="title_work wow fadeInUp">Hawkers Co.</h2>
-						<p class="common_text text_dark wow fadeIn"><span class="strong">Mi rol:</span> Diseño ux, maquetacion Html, Css, Jquery</p>
+						<p class="common_text text_dark wow fadeIn"><span class="strong">Mi rol:</span> Diseño ux/ui, maquetacion Html, Css, Jquery</p>
 						<section class="center slider">
 						    <div>
 								<img src="images/works/hawkers01.png" class="img-responsive">
@@ -139,88 +133,87 @@
 					</div>
 				</div>
 				<div class="filter_element filter_code container_space">
-					<div class="">
+					<div class="cont_info clearfix">
 						<h2 class="title_work wow fadeInUp">Olimport</h2>
-						<p class="common_text text_dark wow fadeIn"><span class="strong">Mi rol:</span> Diseño ux, maquetacion Html, Css, Jquery</p>
-					</div>
-					<section class="center slider">
-						    <div>
-								<img src="images/works/olimport01.png" class="img-responsive">
-						    </div>
-						    <div>
-								<img src="images/works/olimport02.png" class="img-responsive">
-						    </div>
-					</section>
-					<div class="link_site">
-						<i class="material-icons">&#xE5CC;</i>
-						<a href="http://www.olimport.com.uy/" class="text_sm" target="_blank">Visitar sitio</a>
+						<p class="common_text text_dark wow fadeIn"><span class="strong">Mi rol:</span> Diseño ux/ui, maquetacion Html, Css, Jquery</p>
+						<section class="center slider">
+							    <div>
+									<img src="images/works/olimport01.png" class="img-responsive">
+							    </div>
+							    <div>
+									<img src="images/works/olimport02.png" class="img-responsive">
+							    </div>
+						</section>
+						<div class="link_site">
+							<i class="material-icons">&#xE5CC;</i>
+							<a href="http://www.olimport.com.uy/" class="text_sm" target="_blank">Visitar sitio</a>
+						</div>
 					</div>
 				</div>
 				<div class="filter_element filter_code container_space">
-					<div class="">
+					<div class="cont_info clearfix">
 						<h2 class="title_work wow fadeInUp">Crown</h2>
-						<p class="common_text text_dark wow fadeIn"><span class="strong">Mi rol:</span> Diseño ux, maquetacion Html, Css, Jquery</p>
-					</div>
-					<section class="center slider">
-						    <div>
-								<img src="images/works/crown01.png" class="img-responsive">
-						    </div>
-						    <div>
-								<img src="images/works/crown02.png" class="img-responsive">
-						    </div>
-					</section>
-					<div class="link_site">
-						<i class="material-icons">&#xE5CC;</i>
-						<a href="http://www.crown.com.uy/" class="text_sm" target="_blank">Visitar sitio</a>
+						<p class="common_text text_dark wow fadeIn"><span class="strong">Mi rol:</span> Diseño ux/ui, maquetacion Html, Css, Jquery</p>
+						<section class="center slider">
+							    <div>
+									<img src="images/works/crown01.png" class="img-responsive">
+							    </div>
+							    <div>
+									<img src="images/works/crown02.png" class="img-responsive">
+							    </div>
+						</section>
+						<div class="link_site">
+							<i class="material-icons">&#xE5CC;</i>
+							<a href="http://www.crown.com.uy/" class="text_sm" target="_blank">Visitar sitio</a>
+						</div>
 					</div>
 				</div>
 				<div class="filter_element filter_code container_space">
-					<div class="">
+					<div class="cont_info clearfix">
 						<h2 class="title_work wow fadeInUp">Manpower Group</h2>
-						<p class="common_text text_dark wow fadeIn"><span class="strong">Mi rol:</span> Diseño ux, maquetacion Html, Css, Jquery</p>
-					</div>
-					<section class="center slider">
-						    <div>
-								<img src="images/works/manpower01.png" class="img-responsive">
-						    </div>
-						    <div>
-								<img src="images/works/manpower05.png" class="img-responsive">
-						    </div>
-						    <div>
-								<img src="images/works/manpower04.png" class="img-responsive">
-						    </div>
-						    <div>
-								<img src="images/works/manpower02.png" class="img-responsive">
-						    </div>
-					</section>
-					<div class="link_site">
-						<i class="material-icons">&#xE5CC;</i>
-						<a href="http://www.manpowergroup.com.uy/" class="text_sm" target="_blank">Visitar sitio</a>
+						<p class="common_text text_dark wow fadeIn"><span class="strong">Mi rol:</span> Diseño ux/ui, maquetacion Html, Css, Jquery</p>
+						<section class="center slider">
+							    <div>
+									<img src="images/works/manpower01.png" class="img-responsive">
+							    </div>
+							    <div>
+									<img src="images/works/manpower05.png" class="img-responsive">
+							    </div>
+							    <div>
+									<img src="images/works/manpower04.png" class="img-responsive">
+							    </div>
+							    <div>
+									<img src="images/works/manpower02.png" class="img-responsive">
+							    </div>
+						</section>
+						<div class="link_site">
+							<i class="material-icons">&#xE5CC;</i>
+							<a href="http://www.manpowergroup.com.uy/" class="text_sm" target="_blank">Visitar sitio</a>
+						</div>
 					</div>
 				</div>
 				<div class="filter_element filter_code container_space">
-					<div class="">
+					<div class="cont_info clearfix">
 						<h2 class="title_work wow fadeInUp">Clo</h2>
-						<p class="common_text text_dark wow fadeIn"><span class="strong">Mi rol:</span> Diseño ux, maquetacion Html, Css, Jquery</p>
-					</div>
-					<section class="center slider">
-						    <div>
-								<img src="images/works/clo01.png" class="img-responsive">
-						    </div>
-						    <div>
-								<img src="images/works/clo02.png" class="img-responsive">
-						    </div>
-					</section>
-					<div class="link_site">
-						<i class="material-icons">&#xE5CC;</i>
-						<a href="http://www.clo.com.uy/" class="text_sm" target="_blank">Visitar sitio</a>
+						<p class="common_text text_dark wow fadeIn"><span class="strong">Mi rol:</span> Diseño ux/ui, maquetacion Html, Css, Jquery</p>
+						<section class="center slider">
+							    <div>
+									<img src="images/works/clo01.png" class="img-responsive">
+							    </div>
+							    <div>
+									<img src="images/works/clo02.png" class="img-responsive">
+							    </div>
+						</section>
+						<div class="link_site">
+							<i class="material-icons">&#xE5CC;</i>
+							<a href="http://www.clo.com.uy/" class="text_sm" target="_blank">Visitar sitio</a>
+						</div>
 					</div>
 				</div>
-
 
 				<div class="filter_element filter_design container_space">
-					<div class="">
-						<h2 class="title_work wow fadeInUp">Logotipos / Identidad corporativa</h2>
+					<div class="cont_info clearfix">
+						<h2 class="title_work wow fadeInUp">Branding</h2>
 						<p class="common_text text_dark wow fadeIn"><span class="strong">Consigna:</span> Creación de logotipos en base a palabras seleccionadas previamente por el docente. Proyecto dentro del marco académico.</p>
 					</div>
 					<section class="center slider">
@@ -273,7 +266,7 @@
 				</div>
 
 				<div class="filter_element filter_design container_space">
-					<div class="">
+					<div class="cont_info clearfix">
 						<h2 class="title_work wow fadeInUp">Nix Cola</h2>
 						<p class="common_text text_dark wow fadeIn"><span class="strong">Consigna:</span> Diseño de identidad gráfica en base a compañia ya existente. Creación de piezas gráficas, desarrrollo de identidad corporativa, producción gráfica de cartelería y folletería. Proyecto dentro del marco académico.</p>
 					</div>
@@ -309,7 +302,7 @@
 				</div>
 			
 				<div class="filter_element filter_design container_space">
-					<div class="">
+					<div class="cont_info clearfix">
 						<h2 class="title_work wow fadeInUp">EGA Viajes / Rutas del Plata (Cliente Freelance)</h2>
 						<p class="common_text text_dark wow fadeIn"><span class="strong">Mi rol:</span> Contenidos gráficos, fotografía institucional para utilizar en piezas gráficas. Producción gráfica de cartelería y folletería. Propuesta, negociación y trato con el cliente en el proyecto. </p>
 					</div>
@@ -353,32 +346,30 @@
 				</div>
 			</div>
 			<footer class="footer">	
-				<p class="text-center copyright">Copyright © 2016 | All rights reserved</p>
+				<p class="text-center copyright">Copyright © 2016 | Todos los derechos reservados</p>
 			</footer>
 	    </div>
 
 	<script>
-	$(function(){
-	    var $container = $('#works');
-	    $container.isotope({
-	          itemSelector : '.filter_element'
-	    });
-	
-	    $('#filter_works a').click(function(){
-			event.preventDefault();
-	      	var selector = $(this).attr('data-filter');
-	      	$container.isotope({ 
-	      		filter: selector,
-	
-	      	});
-	      	return false;
-	    });
-	
+	$(window).load(function() {
+		$(function(){
+		    var $container = $('#works');
+		    $container.isotope({
+		          itemSelector : '.filter_element'
+		    });
+		
+		    $('#filter_works a').click(function(){
+		      	var selector = $(this).attr('data-filter');
+		      	$container.isotope({ 
+		      		filter: selector,
+		      	});
+		      	return false;
+		    });
+		
+		});
 	});
 	</script>
-
-
-
+	
 	<script>
 		$('.center').slick({
 		  	centerMode: true,
@@ -391,7 +382,7 @@
 		  	  {
 		  	    breakpoint: 768,
 		  	    settings: {
-		  	      arrows: false,
+		  	      arrows: true,
 		  	      centerMode: false,
 		  	      centerPadding: '40px',
 		  	      slidesToShow: 1
@@ -400,7 +391,7 @@
 		  	  {
 		  	    breakpoint: 480,
 		  	    settings: {
-		  	      arrows: false,
+		  	      arrows: true,
 		  	      centerMode: false,
 		  	      centerPadding: '40px',
 		  	      slidesToShow:1
@@ -409,9 +400,5 @@
 		  	]
 		});
 	</script>
-
-
-
-
 	</body>
 </html>  
