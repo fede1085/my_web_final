@@ -93,7 +93,8 @@ function showOverlay(btnShow, overlay) {
         return false;
     });
     $('#btn-close').on('click', function() {
-        $(this).parent(overlay).css('left', -getOverlayWidth * 2);
+        var newOverlayWidth = $('#main_menu').outerWidth();
+        $(this).parent(overlay).css('left', -newOverlayWidth);
         return false;
     });
 }
