@@ -25,13 +25,13 @@ $(document).ready(function() {
 function animatedAnchor(btnSlide) {
     $(btnSlide).each(function(){
         $(this).on('click', function() {
-            var elementID = $(this).attr('href');
-            var scrollLength = $(elementID).offset().top;
-            
+            var elementID = $(this).data('target');  
+            var scrollLength = $('#' + elementID).offset().top;
             $('html, body').animate({
                 scrollTop : scrollLength
             }, 1300, 'easeOutQuart');
 
+            return false;
         });
     });
 }
